@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <link rel="stylesheet" href="styles.css">
+    <title>Bookify</title>
+</head>
+<body>
+    <nav>
+        <div class="nav__logo"><a href="#">Bookify</a></div>
+        <ul class="nav__links">
+            <li class="link">Home</li>
+            <li class="link">Categories</li>
+            <li class="link">Popular</li>
+            <li class="link">Contact Us</li>
+        </ul>
+        <div class="search__box">
+            <input type="text" placeholder="Search">
+            <i class="ri-search-line"></i>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="conatiner__left">
+            <div class="content">
+                <h1>BOOKIFY YOUR<br>LIFE</h1>
+                <br>
+                <p><b>Welcome to Bookify!</b><br> Your one-stop digital library for discovering and accessing a world of knowledge. Whether you're a book lover, a student, or a curious mind, Bookify offers a vast collection of books, research papers, and resources at your fingertips. Dive into a wide range of categories, from fiction to science, and enjoy seamless reading experiences anytime, anywhere. Explore, learn, and get inspired—Bookify is here to fuel your passion for reading and growth.</p>
+                 <br>
+                <div class="btns">
+                <button class="read__more">Read More</button>
+                <button class="our__blogs">Our Blogs</button>
+            </div>
+            <br>
+            <div class="chevrons">
+                <span class="chev__left">
+                    <i class="ri-arrow-left-s-line"></i>
+                </span>
+                <span class="chev__right">
+                    <i class="ri-arrow-right-s-line"></i>
+                </span>
+            </div>
+            </div>
+            <br>
+        <div class="conatiner__right">
+            <form action="/search-books" method="GET" style="display: flex; align-items: center;">
+                <label for="query" style="margin-right: 10px;">Search for books:</label>
+                <input type="text" id="query" name="query" placeholder="Enter book title or author..." required style="padding: 8px; margin-right: 10px; flex-grow: 1;">
+                
+                <label for="category" style="margin-right: 10px;">Category:</label>
+                <select name="category" id="category" style="padding: 8px; margin-right: 10px;">
+                  <option value="">All Categories</option>
+                  <option value="fiction">Fiction</option>
+                  <option value="science">Science</option>
+                  <option value="technology">Technology</option>
+                </select>
+                
+                <button type="submit" style="padding: 8px 16px;">Search</button>
+              </form>
+              
+        </div>
+        <div class="bottom_tracker">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
